@@ -1,0 +1,19 @@
+.square {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin: 1px 30px;
+}
+
+hr {
+    border-width: 0px;
+    height: 10px;
+    background-color: dodgerblue;
+    margin: 50px auto;
+}
+
+a {
+    display: block;
+}

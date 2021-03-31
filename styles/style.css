@@ -1,19 +1,25 @@
-.square {
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    background-color: transparent;
-    border: 2px solid black;
-    margin: 1px 30px;
-}
-
-hr {
-    border-width: 0px;
-    height: 10px;
-    background-color: dodgerblue;
-    margin: 50px auto;
+body {
+  background-color: #161A1D; /*Eerie Black*/
+  color: #F5F3F4; /*Cultured*/
 }
 
 a {
-    display: block;
+  display: block;
+  color: #E5383B; /*Imperial Red*/
+}
+
+hr {
+  border-width: 0px;
+  height: 10px;
+  background-color: #B1A7A6; /*Silver Chalice*/
+  margin: 50px auto;
+}
+
+.square {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  margin: 1px 30px;
 }

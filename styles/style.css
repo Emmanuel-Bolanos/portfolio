@@ -27,7 +27,8 @@ h3 {
   grid-template-areas: 
     "header"
     "nav"
-    "mainContent"
+    "projects"
+    "aboutMe"
     "footer";
 }
 
@@ -45,9 +46,34 @@ nav {
   grid-area: nav;
 }
 
-main {
-  border: 2px solid lightsteelblue;
-  grid-area: mainContent;
+.projects {
+  border: 2px solid lightcoral;
+  grid-area: projects;
+  display: flex;
+  flex-direction: column;
+}
+
+.showProjects {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+  height: auto;
+  align-items: center;
+}
+
+.showProjects a{
+  margin: 1em;
+  width: 75%;
+}
+
+.showProjects a img {
+  max-width: 100%;
+}
+
+.aboutMe {
+  border: 2px solid lightskyblue;
+  grid-area: aboutMe;
 }
 
 footer {

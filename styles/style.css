@@ -96,9 +96,44 @@ nav {
 
 aside {
   grid-area: sidebar;
+  position: fixed;
+  right: 0em;
+  bottom: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(125, 222, 146, 0.75);
+  border-radius: 1em;
+  padding: 0.2em;
+  margin: 0.1em;
+}
+
+aside:hover .contactLinks {
+  visibility: visible;
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactLinks{
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+
+aside h3 {
+  color: #D11149;
+  margin: 0.5em 0.5em;
+}
+
+.contactLinks a {
+  color: #D11149;
+  text-decoration: none;
 }
 
 footer {
+  border-top: 3px solid gray;
   grid-area: footer;
 }
 

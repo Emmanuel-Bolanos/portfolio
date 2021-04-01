@@ -1,5 +1,4 @@
 body {
-  background-color: #161A1D;
   background-image: linear-gradient(180deg, #161A1D, #1B9AAA, #2B4A55);
   color: #F5F3F4;
   font-family: 'Mulish', sans-serif;
@@ -38,6 +37,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 
@@ -115,4 +115,14 @@ nav a:hover {
   color: #36F1CD;
   background-color: #A3320B;
   transition: all 1s ease;
+}
+
+.projectDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectDisplay img {
+  max-width: 40%;
 }

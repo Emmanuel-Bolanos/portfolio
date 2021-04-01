@@ -1,20 +1,21 @@
 body {
-  background-color: #161A1D; /*Eerie Black*/
-  color: #F5F3F4; /*Cultured*/
+  background-color: #161A1D;
+  background-image: linear-gradient(180deg, #161A1D, #1B9AAA, #2B4A55);
+  color: #F5F3F4;
   font-family: 'Mulish', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "bitter", serif;
-  color: #BA181B; /* carnelian */
+  color: #EAE1DF;
 }
 
 h1 { 
-  font-size: 190%; 
+  font-size: 250%; 
 }
 
 h2 { 
-  font-size: 160%; 
+  font-size: 200%; 
 }
 
 h3 { 
@@ -22,18 +23,17 @@ h3 {
 }
 
 .container {
-  /*Setup for mobile users*/
   display: grid;
   grid-template-areas: 
     "header"
     "nav"
     "projects"
     "aboutMe"
+    "sidebar"
     "footer";
 }
 
 .welcome {
-  border: 2px solid lightblue;
   grid-area: header;
   display: flex;
   flex-direction: column;
@@ -42,12 +42,17 @@ h3 {
 }
 
 nav {
-  border: 2px solid lightgoldenrodyellow;
   grid-area: nav;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .projects {
-  border: 2px solid lightcoral;
   grid-area: projects;
   display: flex;
   flex-direction: column;
@@ -72,33 +77,28 @@ nav {
 }
 
 .aboutMe {
-  border: 2px solid lightskyblue;
   grid-area: aboutMe;
 }
 
+aside {
+  grid-area: sidebar;
+}
+
 footer {
-  border: 2px solid lightgreen;
   grid-area: footer;
 }
 
 nav a {
-  display: inline;
-  color: #118AB2; /*Imperial Red*/
-  justify-self: center;
+  color: #EAE1DF;
+  text-decoration: none;
+  background-color: #66b1f1;
+  padding: 0.5em;
+  flex: 1;
+  text-align: center;
 }
 
-hr {
-  border-width: 0px;
-  height: 1em;
-  background-color: #B1A7A6; /*Silver Chalice*/
-  margin: 3em auto;
-}
-
-.square {
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  background-color: transparent;
-  border: 2px solid dodgerblue;
-  margin: 1px 30px;
+nav a:hover {
+  color: #36F1CD;
+  background-color: #A3320B;
+  transition: all 1s ease;
 }

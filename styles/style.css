@@ -35,7 +35,6 @@ h3 {
 }
 
 .welcome {
-  border: 2px solid lightblue;
   grid-area: header;
   display: flex;
   flex-direction: column;
@@ -44,12 +43,13 @@ h3 {
 }
 
 nav {
-  border: 2px solid lightgoldenrodyellow;
   grid-area: nav;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 .projects {
-  border: 2px solid lightcoral;
   grid-area: projects;
   display: flex;
   flex-direction: column;
@@ -74,17 +74,14 @@ nav {
 }
 
 .aboutMe {
-  border: 2px solid lightskyblue;
   grid-area: aboutMe;
 }
 
 aside {
   grid-area: sidebar;
-  border: 2px solid lightgoldenrodyellow;
 }
 
 footer {
-  border: 2px solid lightgreen;
   grid-area: footer;
 }
 

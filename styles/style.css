@@ -1,5 +1,6 @@
 body {
   background-color: #161A1D; /*Eerie Black*/
+  background-image: linear-gradient(180deg, #161A1D, #1B9AAA, #2B4A55);
   color: #F5F3F4; /*Cultured*/
   font-family: 'Mulish', sans-serif;
 }
@@ -29,6 +30,7 @@ h3 {
     "nav"
     "projects"
     "aboutMe"
+    "sidebar"
     "footer";
 }
 
@@ -76,6 +78,11 @@ nav {
   grid-area: aboutMe;
 }
 
+aside {
+  grid-area: sidebar;
+  border: 2px solid lightgoldenrodyellow;
+}
+
 footer {
   border: 2px solid lightgreen;
   grid-area: footer;
@@ -92,13 +99,4 @@ hr {
   height: 1em;
   background-color: #B1A7A6; /*Silver Chalice*/
   margin: 3em auto;
-}
-
-.square {
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  background-color: transparent;
-  border: 2px solid dodgerblue;
-  margin: 1px 30px;
 }

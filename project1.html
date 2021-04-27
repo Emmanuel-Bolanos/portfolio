@@ -3,39 +3,54 @@
   <head>
     <meta charset="UTF-8">
     <title>Project 1 </title>
+    <!-- favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='resources/imgs/favicon.ico' />
     <!-- Fonts for headings & content -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Mulish&display=swap">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link type="text/css" rel="stylesheet" href="styles/style.css">
   </head>
-  <body class="container">
+  <body class="projectContainer">
+
+    <header>
+      <h1> Autonomous Line Follower Car </h1>
+    </header>
+
     <nav>
-      <a href="index.html#home">HOME</a>
-      <a href="index.html#projectList">PROJECTS</a>
-      <a href="resources/myCurrentCV.pdf" target="_">RESUME</a>
-      <a href="index.html#me">ABOUT ME</a>
+      <a href="./index.html#home"><i class='bx-fw bx bx-home-alt'></i> HOME</a>
+      <a href="#obj"><i class="bx-fw bx bx-target-lock"></i> OBJECTIVE </a>
+      <a href="#techInfo"><i class="bx-fw bx bx-detail"></i> DETAILS </a>
+      <a href="#resources"><i class="bx-fw bx bx-link"></i> RESOURCES </a>
     </nav>
-    <section class="welcome">
-      <header>
-        <h1> Autonomous Line Follower Car </h1>
-      </header>
-    </section>
-    <main class="projectDisplay">
-      <div id="projectIntroduction">
-        <p>The goal of this project was to...</p>
-      </div>
-      <img src="resources/imgs/lineFollower.PNG" alt="An autonomous line follower car" title="Autonomus Line Follower">
-      <div id="techDetails">
-        <h2>Technical details</h2>
-        <p>This project was made using...</p>
-      </div>
-      <div id="projectResources">
+
+    <main>
+      <section id="obj" class="projectObjective">
+        <h2> Objective </h2>
+        <p>The goal of this project was to build an autonomous line follower vehicle that was also capable of detection of obstacles. Once an obstacle was detected, the vehicle had to find a way around it and return to the path made by the line.</p>
+      </section>
+      <section id="techInfo" class="techDetails">
+        <h2> Technical details </h2>
+        <div class="toolContainer">
+          <img src="resources/imgs/lineFollower.PNG" alt="An autonomous line follower car" title="Autonomous Line Follower">
+          <ul class="toolList">
+            <p> This project was made using: </p>
+            <hr>
+            <li class="advanced"> PIC microcontrollers </li>
+            <hr>
+            <li class="intermediate"> Sensors and Actuators </li>
+            <hr>
+            <li class="novice"> C </li>
+          </ul>
+        </div>
+      </section>
+      <section id="resources" class="projectResources">
         <h2>Resources</h2>
         <a href="">Link to Githup repo of the project</a>
         <a href="">Link to other resources...</a>
-      </div>
+      </section>
     </main>
+
     <aside>
       <p><i class="bx-fw bx bxs-contact"></i> Contact me!</p>
       <section class="contactLinks">
@@ -44,8 +59,5 @@
         <a href="mailto:Emmanuel.Bolanos@theksquaregroup.com" target="_"><i class="bx-fw bx bx-mail-send"></i> Send me an email!</a>
       </section>
     </aside>
-    <footer>
-        <p>Some info can go here</p>
-    </footer>
   </body>
 </html>

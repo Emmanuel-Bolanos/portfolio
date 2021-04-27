@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio by Emmanuel</title>
+    <title>Emmanuel's Portfolio</title>
+    <!-- favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='resources/imgs/favicon.ico' />
     <!-- Fonts for headings & content -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Mulish&display=swap">
     <!-- Boxicons CSS -->
@@ -11,36 +13,52 @@
   </head>
   <body class="container">
     <nav>
-      <a href="#home"><i class='bx-fw bx bxs-home'></i> HOME</a>
+      <a href="#home"><i class='bx-fw bx bx-home-alt'></i> HOME</a>
+      <a href="#toolBox"><i class="bx-fw bx bx-box"></i> TOOL BOX</a>
       <a href="#projectList"><i class="bx-fw bx bx-laptop"></i> PROJECTS</a>
-      <a href="resources/myCurrentCV.pdf" target="_"><i class="bx-fw bx bx-link-external"></i> RESUME</a>
       <a href="#me"><i class="bx-fw bx bx-user"></i> ABOUT ME</a>
     </nav>
+
     <section id="home" class="welcome">
       <header>
-        <h1>Emmanuel Bolaños</h1>
+        <h1> Emmanuel Arturo Bolaños Espinoza </h1>
+        <img src="resources/imgs/oneMe.png" alt="A professional picture of me" title="Picture of Emmanuel Bolanos">
       </header>
-      <img src="resources/imgs/oneMe.jpg" alt="One day, this will be a professional picture of me" title="Temporal picture of me" width="50%">
       <h2> Welcome to my portfolio! </h2>
       <p id="welcomeInfo"> I am a web developer based in México, I have a bachelor degree in mechatronics engineering and passion for learning something new everyday. </p>
     </section>
+
     <main>
-      <section id="projectList" class="projects">
-        <section class="projectsFilter">
-          <h2>PROJECTS</h2>
-          <p>To filter the tools used in my projects select them in the section below</p>
-          <ul class="toolsFilter">
-            <li> JavaScript </li>
-            <li> CSS </li>
-            <li> HTML </li>
-            <li> MongoDB </li>
-            <li> MySQL </li>
-            <li> C </li>
-            <li> React </li>
-            <li> Node.js </li>
+      <section id="toolBox" class="tools">
+        <h2> TOOL BOX </h2>
+        <div class="toolContainer">
+          <span class="proficiencyMeter"> 
+            <p> PROFICIENCY </p> 
+            <p> NOVICE </p>
+          </span>
+          <ul class="toolList">
+            <li class="advanced" > JavaScript </li>
+            <li class="advanced"> Python </li>
+            <hr>
+            <li class="intermediate"> CSS </li>
+            <li class="intermediate"> HTML </li>
+            <li class="intermediate"> MongoDB </li>
+            <li class="intermediate"> MySQL </li>
+            <li class="intermediate"> Computer Vision </li>
+            <li class="intermediate"> Machine Learning </li>
+            <li class="intermediate"> MATLAB </li>
+            <hr>
+            <li class="novice"> React </li>
+            <li class="novice"> Node.js </li>
+            <li class="novice"> REST API </li>
+            <li class="novice"> ROS </li>
+            <li class="novice"> C </li>
           </ul>
-          <p>Showing all projects:</p>
-        </section>
+        </div>
+      </section>
+
+      <section id="projectList" class="projects">
+        <h2>PROJECTS</h2>
         <section class="showProjects">
           <article class="project">
             <h3> Autonomous Line Follower Car </h3>
@@ -62,6 +80,7 @@
           </article>
         </section>
       </section>
+
       <section id="me" class="aboutMe">
         <h2> ABOUT ME </h2>
         <p> I live in the beautiful Yucatán Peninsula, I work in the Ksquare University as a JavaScript Associate Software Engineer, my main task at the moment is to complete my training and obtain a certification to demonstrate my skills. </p>
@@ -71,6 +90,7 @@
         <p> On my free time, I love playing PC videogames. At the moment I am trying to finish Hades. As a fun fact, I also love playing Sudoku, so I try to play at least once a day to keep my skills fresh. I like watching series, anime and manga from time to time, currently I am watching Invincible (pretty good if you like superheroe stories with a dark twist) and I am reading the last part of the Jojos manga. </p>
         <p> I hope we can meet soon! </p>
       </section>
+
     </main>
     <aside>
       <p><i class="bx-fw bx bxs-contact"></i> Contact me!</p>
@@ -80,8 +100,5 @@
         <a href="mailto:Emmanuel.Bolanos@theksquaregroup.com" target="_"><i class="bx-fw bx bx-mail-send"></i> Send me an email!</a>
       </section>
     </aside>
-    <footer>
-      <p>Some info can go here</p>
-    </footer>
   </body>
 </html>

@@ -278,7 +278,6 @@ aside p {
 }
 
 /* PROJECT PAGE */
-
 .projectContainer {
   background-image: linear-gradient(135deg, #2e9620, #408a74, #3e73af, #db2534);
   color: #F5F3F4;
@@ -330,5 +329,4 @@ aside p {
 .projectResources {
   margin-top: 2em;
   padding-top: 2em;
-  margin-bottom: 100em;
 }

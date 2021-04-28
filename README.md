@@ -4,7 +4,9 @@ View my site at https://portfolio.emmasandbox.com/
 
 ## Tasks
 
-[ ] Horizonal Carousel
-[ ] Add Rewards Section to Index
-[ ] Drone Competition Page
-[ ] Machine Learning Research Page
+| Task           | Status |
+|----------------|---------------|
+| Horizonal Carousel | In Progress   |
+| Add Rewards Section to Index   | Pending   |
+| Drone Competition Page   | Pending   |
+| Machine Learning Research Page   | Pending   |

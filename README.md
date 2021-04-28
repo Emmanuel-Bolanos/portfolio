@@ -6,7 +6,7 @@ View my site at https://portfolio.emmasandbox.com/
 
 | Task           | Status |
 |----------------|---------------|
-| Horizonal Carousel | In Progress   |
-| Add Rewards Section to Index   | Pending   |
-| Drone Competition Page   | Pending   |
-| Machine Learning Research Page   | Pending   |
+| Horizonal Carousel | :running:   |
+| Add Rewards Section to Index   | :white_square_button:   |
+| Drone Competition Page   | :white_square_button:   |
+| Machine Learning Research Page   | :white_square_button:   |

@@ -196,7 +196,8 @@ hr {
 }
 
 .projects h2 {
-  margin-top: 2em;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 .showProjects {
@@ -242,7 +243,11 @@ hr {
   text-align: justify;
   max-width: 65vw;
   min-width: 45vw;
-  padding: 2em;
+}
+
+.aboutMe h2 {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 /* ASIDE SECTION */
@@ -315,9 +320,9 @@ aside p {
 
 /* MAIN SECTION */
 /* OBJECTIVE SECTION */
-.projectObjective {
-  margin: 2em 0 0 0;
-  padding: 2em 0 0 0;
+.projectObjective h2 {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 .projectObjective p {
@@ -326,13 +331,16 @@ aside p {
 
 /* TECHNICAL DETAILS SECTION */
 .techDetails {
-  margin: 1em 0 0 0;
-  padding: 1em 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   height: auto;
+}
+
+.techDetails h2 {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 .techDetails img {
@@ -344,8 +352,6 @@ aside p {
 
 /* GALLERY SECTION */
 .projectGallery {
-  margin: 1em 0 0 0;
-  padding: 1em 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,6 +361,8 @@ aside p {
 
 .projectGallery h2 {
   align-self: flex-start;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 .projectGallery img {

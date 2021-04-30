@@ -24,13 +24,13 @@
     <main>
       <section id="obj" class="projectObjective">
         <h2> OBJECTIVE </h2>
-        <p> The goal of the project was to make the drone capable of following an moving object. We had the freedom of choosing the object. The drone had to keep track of the object while a judge kept moving it around. </p>
+        <p> The goal of the project was to make the drone capable of following a moving object. We had the freedom of choosing the object. The drone had to keep track of the object while a judge kept moving it around. </p>
         <br>
         <p> The team took the decision of using a blue cardboard since a solid color would make it easier for the drone to get closer. This part of the algorithm made use of OpenCV to detect the color, and area of the figure, the area allowed us to know the approximate distance to the target. Finally, to send the movement instructions we made use of ROS. </p>
         <br>
         <p> In the center of the cardboard a QR code was placed to make the algorithm more robust against possible similar objects in the environment. ZBar was used to make sure that the QR code was correct and keep track of it with the help of OpenCV. </p>
         <br>
-        <p> After the successful testings (shown in the Gallery Section), a cardboard cube was going to be manufactured to avoid losing the target in case that the judge decided to rotate the object. However, due to the cancellation of the tournament as a consequence of the current pandemic, and to avoid unnecessary health risks, the project was cancelled. </p>
+        <p> After the successful testing (shown in the Gallery Section), a cardboard cube was going to be manufactured to avoid losing the target in case that the judge decided to rotate the object. However, due to the cancellation of the tournament as a consequence of the current pandemic, and to avoid unnecessary health risks, the project was cancelled. </p>
       </section>
       
       <section id="techInfo" class="techDetails">
@@ -63,7 +63,7 @@
         <h2> GALLERY </h2>
         <h3> Drone Initial Position </h3>
         <img src="resources/imgs/droneCV/initialPos.PNG" alt="Drone hovering" title="Drone hovering">
-        <h3> First Detection of Target </h3>
+        <h3> First Detection of the Target </h3>
         <img src="resources/imgs/droneCV/firstDetection.PNG" alt="Drone getting closer" title="Drone getting closer">
         <h3> Drone Enters QR Tracking Stage when Close Enough to Target </h3>
         <img src="resources/imgs/droneCV/trackerStage.PNG" alt="QR tracking" title="QR tracking">
@@ -71,7 +71,7 @@
         <img src="resources/imgs/droneCV/testingDroneBoundaries.PNG" alt="Drone moving" title="Drone moving">
         <h3> When the Target is Gone, Drone Follows Last Known Position </h3>
         <img src="resources/imgs/droneCV/followLastKnownPosition.PNG" alt="Drone Follows Last Known Position" title="Drone Follows Last Known Position">
-        <h3> Drone finds Target Again and Repeats Process </h3>
+        <h3> Drone finds Target Again and Repeats Routine </h3>
         <img src="resources/imgs/droneCV/reDetection.PNG" alt="Drone Detects Target Once Again" title="Drone Detects Target Once Again">
       </section>
     </main>

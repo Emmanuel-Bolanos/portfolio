@@ -395,8 +395,7 @@ aside p {
 /* MAIN SECTION */
 /* OBJECTIVE SECTION */
 .projectObjective h2 {
-  margin: 1em 0 0 0;
-  padding: 1em 0 0 0;
+  margin: 2em 0 1em 0;
 }
 
 .projectObjective p {
@@ -456,10 +455,4 @@ aside p {
   transform: scale(1.5);
   transition: all 0.5s ease;
   z-index: 1;
-}
-
-/* RESOURCES SECTION */
-.projectResources {
-  margin-top: 2em;
-  padding-top: 2em;
 }

@@ -8,5 +8,6 @@ View my site at https://portfolio.emmasandbox.com/
 |----------------|---------------|
 | Horizonal Carousel | :white_check_mark:   |
 | Add Rewards Section to Index   | :white_check_mark:   |
-| Drone Competition Page   | :running:   |
+| Drone Competition Page   | :white_check_mark:   |
 | Machine Learning Research Page   | :white_check_mark:   |
+| Trying to improve design   | :running:   |

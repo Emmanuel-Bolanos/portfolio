@@ -10,8 +10,8 @@
 
 /* INDEX GENERAL STYLES */
 body {
-  background-image: linear-gradient(135deg, #3c6285, #163455);
-  color: #F5F3F4;
+  color: #1D2332;
+  background-color: #C0AE81;
   font-family: 'Gelasio', serif;
   margin: 0;
 }
@@ -30,27 +30,34 @@ body::-webkit-scrollbar-thumb {
 
 
 h1, h2, h3 {
-  color: #EAE1DF;
+  color: #202B49;
 }
 
 h1 { 
   font-family: 'Rokkitt', serif;
   font-size: 200%;
-  text-shadow: 2px 2px 2px red;
+  text-shadow: 1px 1px 20px #202b49;
 }
 
-h2, h3 {
+h2{
   font-family: 'Oswald', sans-serif;
+  font-size: 175%;
+}
+
+h3 {
   font-size: 150%;
-  text-shadow: 2px 2px 1px black;
+}
+
+p {
+  font-size: 125%;
 }
 
 /* GRID */
 .container {
   display: grid;
   grid-template-areas: 
-    "header"
     "nav"
+    "header"
     "toolBox"
     "projects"
     "award"
@@ -66,6 +73,7 @@ h2, h3 {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  padding-bottom: 4em;
 }
 
 .welcome header {
@@ -73,8 +81,13 @@ h2, h3 {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 1px 2px 10px black;
+  box-shadow: 0 4px 3px -3px black;
   width: 100%;
+  padding: 4em 0 0 0;
+}
+
+.welcome h2 {
+  margin-top: 4em;
 }
 
 .welcome img {
@@ -87,11 +100,19 @@ h2, h3 {
   box-sizing: border-box;
 }
 
-.welcome #welcomeInfo {
+.welcome .welcomeInfo{
   align-self: center;
-  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 7em;
+  background-color: #A2863F;
+}
+
+.welcome p {
+  max-width: 50%;
   min-width: 200px;
-  margin-bottom: 4em;
 }
 
 /* NAV STYLES */
@@ -110,17 +131,17 @@ nav {
 }
 
 nav a {
-  color: #EAE1DF;
-  background-color: #3f88c9;
+  color: #1D2332;
+  background-color: #F6F6F6;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0.75em;
   flex: 1;
   transition: all 1s ease;
 }
 
 nav a:hover, nav a:focus, .contactLinks a:hover {
-  color: black;
-  background-color: #EAE1DF;
+  color: #F6F6F6;
+  background-color: #1D2332;
   transition: all 1s ease;
 }
 
@@ -138,10 +159,11 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 90vw;
+  margin-bottom: 2em;
 }
 
 .tools h2 {
-  margin-top: 2em;
+  margin: 2em 0 1em 0;
 }
 
 .toolContainer {
@@ -150,9 +172,9 @@ main {
 }
 
 .proficiencyMeter {
-  min-width: 150px;
+  min-width: fit-content;
   height: auto;
-  background-image: linear-gradient(180deg, #D11149, #E14127, #F17105);
+  background-image: linear-gradient(180deg, #A2863F, #DED6C2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,8 +189,9 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 75vw;
+  max-width: 65vw;
   min-width: 50px;
+  margin-bottom: 2em;
 }
 
 .toolList li {
@@ -177,38 +200,38 @@ main {
   align-self: center;
   max-width: 20vw;
   min-width: 10vw;
-  padding: 1em;
-  margin: 1em;
-  border-radius: 50%;
+  padding: 1.5em;
+  margin: 1em 1em;
   transition: all 1s ease;
   box-shadow: 1px 1px 3px black;
 }
 
 @media screen and (max-width: 800px) {
   .toolList li {
-    padding: 0.5em;
-    margin: 0.5em;
-    border-radius: 0;
+    padding: 1em;
+    margin: 0.75em 0.25em;
     transition: all 1s ease;
   } 
 }
 
 .toolList .advanced {
-  background-color: #D11149;
+  background-color: #A2863F;
 }
 
 .toolList .intermediate {
-  background-color: #E14127;
+  background-color: #ceb578;
 }
 
 .toolList .novice {
-  background-color: #F17105;
+  background-color: #DED6C2;
 }
 
 .toolList li:hover {
-  color: black;
-  transform: scale(1.25);
-  transition: all 1s ease;
+  z-index: 1;
+  color: #1D2332;
+  text-shadow: 1px 1px 8px #1D2332;
+  transform: scale(2);
+  transition: all 1s ease-in-out;
 }
 
 hr {
@@ -227,10 +250,11 @@ hr {
   align-items: center;
   max-width: 90vw;
   height: auto;
+  margin-bottom: 6em;
 }
 
 .showProjects h2 {
-  margin: 2em 0 1em 0;
+  margin: 2em 0 3em 0;
 }
 
 /* SLIDER */
@@ -240,9 +264,10 @@ hr {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 300px;
+  min-height: 200px;
+  max-height: 600px;
   text-align: center;
-  background-image: linear-gradient(180deg, #581a34, #76567a18);
+  background-color: #A2863F;
   border-radius: 20px 20px 0 0;
   overflow-x: auto;
   white-space: nowrap;
@@ -256,8 +281,10 @@ hr {
 }
 
 .showProjects .slider .project img {
-  max-width: 35vw;
+  max-width: 50vw;
+  max-height: 300px;
   box-shadow: 2px 2px 2px black;
+  margin: 2em;
 }
 
 /* SLIDER SCROLLBAR */
@@ -274,10 +301,11 @@ hr {
   grid-area: award;
   align-self: center;
   text-align: center;
+  margin-bottom: 4em;
 }
 
 .awards h2 {
-  margin: 2em 0 1em 0;
+  margin: 2em 1em;
 }
 
 .awardShelf {
@@ -289,34 +317,39 @@ hr {
 
 .awardCard {
   margin: 1em;
-  background-color: #E35039;
-  border-radius: 2em;
+  background-color: #A2863F;
   box-shadow: 2px 2px 4px black;
   min-width: 300px;
   width: 30vw;
   max-width: 40vw;
   height: fit-content;
+  transition: all 1s ease-in-out;
+}
+
+.awardCard:hover {
+  box-shadow: 0 0 20px yellow;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+
+.awards .awardCard h3 {
+  padding: 0.5em 1em;
 }
 
 .awards .awardCard p {
-  padding: 1em;
+  padding: 0.5em 2em;
 }
 
-
 .awards .awardCard a:link, .awards .awardCard a:visited {
-    color: white;
     padding: 0.25em 0.25em;
     text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px black;
+    text-decoration: underline solid transparent;
     display: inline-block;
     transition: all 1s ease;
 }
 
 .awards .awardCard a:hover, .awards .awardCard a:active {
-  text-shadow: none;
-  background-color: rgb(138, 132, 132);
-  color: rgb(59, 57, 57);
+  text-decoration: underline solid currentColor;
   transition: all 1s ease;
 }
 
@@ -346,10 +379,9 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #3f89c996;
   padding: 0;
   margin: 0;
-  color: white;
+  background-color: #A2863F;
   z-index: 3;
 }
 
@@ -365,6 +397,7 @@ aside:hover .contactLinks {
   opacity: 0;
   display: none;
   visibility: hidden;
+  padding: 0;
 }
 
 aside p {
@@ -372,7 +405,7 @@ aside p {
 }
 
 .contactLinks a {
-  color: white;
+  color: #1D2332;
   text-decoration: none;
   width: 100%;
   margin: 0;
@@ -381,52 +414,37 @@ aside p {
 
 /* PROJECT PAGE */
 .projectContainer {
-  background-image: linear-gradient(135deg, #2e9620, #408a74, #3e73af, #db2534);
-  color: #F5F3F4;
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background-size: 500% 500%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: justify;
-  animation: gradient 15s ease-in-out infinite;
-}
-
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
+  justify-content: center;
+  text-align: center;
 }
 
 /* MAIN SECTION */
 /* OBJECTIVE SECTION */
-.projectObjective h2 {
-  margin: 2em 0 1em 0;
-}
-
-.projectObjective p {
-  margin: 0 2em;
+.projectObjective {
+  align-self: center;
+  max-width: 70vw;
+  padding: 4em 2em;
+  margin: 2em 0 4em 0;
+  box-shadow: 2px 2px 2px black;
 }
 
 /* TECHNICAL DETAILS SECTION */
 .techDetails {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: auto;
+  margin-bottom: 2em;
 }
 
 .techDetails h2 {
-  margin: 1em 0 0 0;
-  padding: 1em 0 0 0;
+  margin: 2em 0 1em 0;
 }
 
 .techDetails img {
@@ -446,9 +464,7 @@ aside p {
 }
 
 .projectGallery h2 {
-  align-self: flex-start;
-  margin: 1em 0 0 0;
-  padding: 1em 0 0 0;
+  margin: 2em 0 1em 0;
 }
 
 .projectGallery img {

@@ -1,4 +1,4 @@
-# Emmanuel Portfolio
+# Emmanuel Portfolio Project
 
 View my site at https://portfolio.emmasandbox.com/
 
